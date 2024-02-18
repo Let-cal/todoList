@@ -5,7 +5,7 @@ import Tasks from "./tasks";
 function Main() {
   const [inputValue, setInputValue] = useState("");
   const [todoList, setTodoList] = useState(
-    JSON.parse(localStorage.getItem("todolist"))
+    JSON.parse(localStorage.getItem("todolist")) ?? []
   );
 
   useEffect(() => {
